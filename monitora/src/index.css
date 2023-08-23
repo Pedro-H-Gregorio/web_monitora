@@ -1,28 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  @apply max-w-[100vw] min-h-screen m-0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-width: 100vw;
-  min-height: 100vh;
 }
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-.content-under-login{
-  background-color: #f1f1f1;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    align-content: center;
-    flex-wrap: nowrap;
-    flex-direction: column;
+.content-under-login {
+  @apply bg-[#e3e3e3] justify-center items-center w-screen h-screen relative flex content-center flex-nowrap flex-col;
+}
+
+.card-main {
+  @apply bg-[#ffffff] h-[60vh] w-[70vw] flex flex-nowrap flex-col justify-center;
 }
